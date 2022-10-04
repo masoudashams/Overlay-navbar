@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.text-zone{
+    text-align: center;
+    color: blanchedalmond;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+  
+
+    
+    
+}
+.h1{
+    position: relative;
+    top:45%;
+    right:15%;
+
+}
+
+.h2{
+    position: relative;
+    top:45%;
+    right:15%;
+
+}
+.img{
+    float:right;
+    position: relative;
+    right: 155px;
+}
+
+
+
+
+
+
+.homeskill{
+    transform: translateY(-200px);
+    background-color: blanchedalmond;
+    height: 1500px;
+    position: relative;
+    margin-bottom: -200px;
+    padding: 200px;
+    box-sizing: border-box;
+    perspective: 450px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.homeskill >h3{
+    text-align: center;
+    color: white;
+}
+.skillimg{
+    width: 200px;
+    height: 200px;
+    animation: skill 15s linear infinite alternate;
+    transform-style: preserve-3d;
+}
+.allskill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+}
+.allskill >img{
+    width: inherit;
+    height: inherit;
+}
+.skill1{
+    transform: translate3d(0.0.150px);
+}
+.skill2{
+    transform: rotateY(180deg) translate3d(0.0.150px);
+}
+.skill3{
+    transform: rotateY(-90deg) translate3d(0.0.150px);
+}
+  @keyframes skill{
+      to{
+          transform: rotateY(360deg) rotateX(480deg) rotateZ(720deg);
+      }
+  }
+
